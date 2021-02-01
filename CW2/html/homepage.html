@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>city's cake</title>
+  <link rel="stylesheet" href="../stylesheets/stylesheet1.css" type="text/css">
+  <link rel="stylesheet" href="../stylesheets/home.css" type="text/css">
+
+</head>
+
+<body>
+
+  <header>
+    <img src="../images/logo.png"  alt="logo for city's cake">
+    <h1> CITY'S CAKE</h1>
+  </header>
+
+  <nav>
+    <div id="nav-menu">
+      <img id="dropdowm-img" src=  "../images/viewlist.png" alt="dropdown image">
+      <ul class="nav-content">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+        <li><a href="designpage.html">About Us</a></li>
+        <li><a href="dummypage.html">Terms Of Use</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+
+  <section>
+    <br>
+    <!-- form -->
+
+    <form id="Orderinfo" action="orderpage.html" >
+      <div id="my-form">
+        <legend> Order Information</legend>
+        <label> Tel No:</label>
+        <input class="TelNo" type="text" name="Tel No" >
+        <label>Pick Up Date: </label>
+        <input class="Date" type="text" name="Pick Up Date" >
+        <br>
+        Delivery<input id="Delivery" type="radio" name="method" value="Delivery" >
+        Pick Up <input id="Pickup" type="radio" name="method" value="Pick Up">
+        <div >'
+          <input type="submit" name="submit" value="submit" class="button">
+          <input type="reset" name="clear" value="clear" class="button">
+        </div>'
+
+      </div>
+    </form>
+
+    <br>
+    <!-- videos -->
+
+    <div id= "videos" >
+
+      <video class="myvideo" autoplay muted width="500" heigth="360">
+        <source src="https://courses.cs.cityu.edu.hk/cs2204/chocolate.mp4" type="video/mp4">
+      </video>
+      <video class="myvideo" autoplay muted width="500" heigth="360">
+        <source src="http://courses.cs.cityu.edu.hk/cs2204/cakemaking-s.mp4" type="video/mp4" >
+      </video>
+
+    </div>
+
+    <!-- slideshow -->
+
+    <img id ="changeimg" alt="its a cake">
+
+    <div id= cake-info>
+      <h1 class="cakename">Buccellator</h1>
+
+      <table>
+        <caption> Nutrition Information </caption>
+        <thead>
+
+          <tr>
+            <th> Amount per 100g</th>
+            <th> % </th>
+          </tr>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td>Carbohydrate</td>
+            <td class= "Carbohydrate"> 20 </td>
+          </tr>
+          <tr>
+            <td>Protein</td>
+            <td class= "Protein"> 7 </td>
+          </tr>
+          <tr>
+            <td> Fat</td>
+            <td class= "Fat"> 25 </td>
+          </tr>
+          <tr>
+            <td>Cholesterol</td>
+            <td class= "Cholesterol"> 0 </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Total may not add to 100 %</td>
+            <td class ="total"> 52 </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+  </section>
+
+  <!--  footer -->
+
+  <footer>
+    <p> ©CityU 2017 sources of images and text from Wikipedia and courtesy of all-free-download.com </p>
+    <ul id=footer-links>
+      <a href="homepage.html">Home</a> &nbsp;
+      <a href="orderpage.html">Order</a>&nbsp;
+      <a href="designpage.html">About Us</a>&nbsp;
+      <a href="dummypage.html">Terms Of Use</a>
+    </ul>
+  </footer>
+
+  <script type="text/javascript" src="../javascript/cakemenu.js"></script>
+  <script type="text/javascript" src="../javascript/homepage.js"></script>
+
+</body>
+</html>

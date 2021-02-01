@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>city's cake</title>
+      <link rel="stylesheet" href="../stylesheets/stylesheet1.css" type="text/css">
+      <link rel="stylesheet" href="../stylesheets/print.css" type="text/css">
+  </head>
+
+  <body>
+    <header>
+      <img src="../images/logo.png"  alt="logo for city's cake">
+      <h1> CITY'S CAKE</h1>
+    </header>
+
+    <nav >
+      <div id="nav-menu">
+      <img src="../images/viewlist.png" alt="dropdown image">
+      <ul class="nav-content">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="orderpage.html">Order</a></li>
+        <li><a href="designpage.html">About Us</a></li>
+        <li><a href="dummypage.html">Terms Of Use</a></li>
+      </ul>
+      </div>
+    </nav>
+
+    <form action="index.html" method="post">
+       <div id="my-form">
+         <label> order(Tel No):</label>
+         <input type="text" name="Tel No" class="telephone" disabled>
+         <label>Pick Up Date: </label>
+         <input type="text" name="Pick Up Date" class="pickdate" disabled>
+         <br>
+         Delivery<input id="Delivery" type="radio" name="method" value="Delivery" disabled>
+         Pick Up <input id="pick-up" type="radio" name="method" value="Pick-Up" disabled>
+       </div>
+    </form>
+
+    <div id="order-price">
+       <table>
+         <thead>
+             <tr>
+                <th> Cake Name </th>
+                <th>Qty</th>
+                <th>Price</th>
+             </tr>
+         </thead>
+         <tbody>
+         </tbody>
+        <tfoot>
+          <tr>
+             <td> Total</td>
+             <td class="totalqnt"> </td>
+             <td class="totalcost"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <form action="homepage.html" method="get" >
+      <input class="clear-btn" type="submit" value="clear storage" onclick="clear()">
+    </form>
+
+    <footer>
+      <p> ©CityU 2017 sources of images and text from Wikipedia and courtesy of all-free-download.com </p>
+      <ul id=footer-links>
+        <a href="homepage.html">Home</a> &nbsp;
+        <a href="orderpage.html">Order</a>&nbsp;
+        <a href="designpage.html">About Us</a>&nbsp;
+        <a href="dummypage.html">Terms Of Use</a>
+      </ul>
+    </footer>
+
+    <script type="text/javascript" src="../javascript/cakemenu.js"></script>
+    <script type="text/javascript" src="../javascript/printpage.js"></script>
+
+  </body>
+</html>

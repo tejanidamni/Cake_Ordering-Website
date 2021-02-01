@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>city's cake</title>
+  <link rel="stylesheet" href="../stylesheets/stylesheet1.css" type="text/css">
+  <link rel="stylesheet" href="../stylesheets/order.css" type="text/css">
+</head>
+
+<body>
+
+  <div id="errorblock">
+  </div>
+
+  <div id="mybody" onclick="comeback()">
+
+    <header>
+      <img src="../images/logo.png" alt="logo for city's cake">
+      <h1> CITY'S CAKE</h1>
+    </header>
+
+    <nav>
+      <div id="nav-menu">
+        <img src="../images/viewlist.png" alt="dropdown image">
+        <ul class="nav-content">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="orderpage.html">Order</a></li>
+          <li><a href="designpage.html">About Us</a></li>
+          <li><a href="dummypage.html">Terms Of Use</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <br>
+
+    <form class="my-form" action="printpage.html" method="get" >
+
+      <div id="my-form" >
+        <h4> Order Information</h4>
+
+        <label> Tel No:</label>
+        <input type="text" name="phoneno" onchange ="changeNo()"class="TelNo"  >
+        <label>Pick Up Date: </label>
+        <input type="text" name="pickupdate"class="Date" >
+        <br>
+        Delivery <input  id="Delivery" type="radio" name="method" value="Delivery">
+        Pick Up  <input id="pick-up" type="radio" name="method" value="Pick-Up">
+      </div>
+
+      <!--This is menu-->
+
+      <h1> Menu</h1>
+
+      <div id="mycakes">
+      </div>
+
+      <div class="myorder">
+        <table id="order-details">
+          <caption>Order No. : <span id="OrderNo"></span> </caption>
+
+          <thead>
+            <tr>
+              <th> Cake Name </th>
+              <th>Qty</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          </tbody>
+
+          <tfoot>
+            <th> Total</th>
+            <th id="total"></th>
+          </tfoot>
+
+        </table>
+
+        <input type="submit" name="Print Invoice" value="Print Invoice" >
+      </div>
+
+    </form>
+
+    <footer>
+      <p> ©CityU 2017 sources of images and text from Wikipedia and courtesy of all-free-download.com </p>
+
+      <ul id=footer-links>
+        <a href="homepage.html">Home</a> &nbsp;
+        <a href="orderpage.html">Order</a>&nbsp;
+        <a href="designpage.html">About Us</a>&nbsp;
+        <a href="dummypage.html">Terms Of Use</a>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script type="text/javascript" src="../javascript/cakemenu.js"></script>
+  <script type="text/javascript" src="../javascript/orderpage.js"></script>
+
+</body>
+</html>

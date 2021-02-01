@@ -1,0 +1,105 @@
+#videos {
+  max-width: inherit;
+  border-radius: 25px;
+  margin: 60px;
+
+}
+
+.myvideo {
+  border: 5px solid black;
+  border-radius: 25px;
+  margin-right:50%;
+  display:none;
+
+}
+
+#my-form{
+  padding:20px;
+  background-color: coral;
+  border-radius: 15px;
+  width:50%;
+  margin-left: 31%;
+  margin-top: 20px;
+
+}
+#my-form label{
+  display: block;
+  padding: 5px;
+}
+#my-form input[type="text"]{
+  padding: 4px;
+  width:100%;
+}
+#my-form input[type="submit"]{
+  color:white;
+  background-color: purple;
+  border:0px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#my-form .button{
+
+  padding:10px;
+  border-radius: 20px;
+
+
+}
+
+#my-form input[type="submit"]:hover {opacity: 1}
+
+
+section img{
+  border: 5px solid black;
+  width:40% ;
+  border-radius: 25px;
+  height:330px;
+  margin-left: 25%;
+  margin-bottom: 25px;
+
+  /* padding: 5%;
+  padding-bottom: 10px; */
+
+}
+
+#cake-info h1{
+
+
+  padding-left: 37%;
+  padding-top: 0px;
+  margin-top: 0px;
+  font-size: 40px;
+  text-shadow: 2px 2px;
+
+
+}
+
+#cake-info table caption{
+
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom:20px;
+
+}
+
+#cake-info table{
+  height:200px;
+  width:500px;
+
+  margin-left:28%;
+  margin-bottom: 25px;
+
+}
+#cake-info table th{
+  text-align: left;
+  color: purple;
+  background-color: silver;
+  padding: 15px;
+
+}
+#cake-info table tfoot{
+    font-weight: bold;
+}
+#cake-info tr:nth-child(even) {
+  background-color:grey ;
+}
